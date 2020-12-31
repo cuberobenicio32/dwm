@@ -113,7 +113,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	/* My custom keys*/
-	{ MODKEY|ShiftMask,		XK_w,	   spawn,	   SHCMD("$BROWSER") },
+	{ MODKEY,			XK_w,	   spawn,	   SHCMD("$BROWSER") },
 	{ MODKEY|ShiftMask,		XK_n,	   spawn,	   SHCMD(TERMINAL " -e newsboat; pkill -RTMIN+6 dwmblocks") },
 	{ MODKEY|ShiftMask,		XK_t,	   spawn,	   SHCMD(TERMINAL " -e gtop") }, 
 	{ MODKEY,			XK_v,	   spawn,	   SHCMD("pavucontrol") },
@@ -122,6 +122,7 @@ static Key keys[] = {
 	{ MODKEY, 			XK_c,      spawn, 	   SHCMD(TERMINAL " -e weechat")},
 	{ MODKEY,			XK_s,	   spawn,	   SHCMD("xfce4-screenshooter") },
 	{ MODKEY|ShiftMask,		XK_l,	   spawn,          SHCMD("slock") },
+	{ MODKEY|ControlMask,		XK_m,	   spawn,	   SHCMD(TERMINAL " -e ncmpcpp") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
