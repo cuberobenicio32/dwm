@@ -23,7 +23,7 @@ static const char col_1[]       = "#222222";
 static const char col_2[]       = "#444444";
 static const char col_3[]       = "#bbbbbb";
 static const char col_4[]       = "#000000";
-static const char col_5[]        = "#8E8E67";
+static const char col_5[]        = "#D8572A";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_3, col_1, col_2 },
@@ -121,7 +121,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_t,	   spawn,	   SHCMD(TERMINAL " -e gtop") }, 
 	{ MODKEY,			XK_v,	   spawn,	   SHCMD("pavucontrol") },
 	{ MODKEY,			XK_r,	   spawn,	   SHCMD(TERMINAL " -e ranger") },
-	{ MODKEY|ShiftMask,		XK_g,	   spawn,	   SHCMD("dolphin") }, 
+	{ MODKEY|ShiftMask,		XK_g,	   spawn,	   SHCMD("thunar") }, 
 	{ MODKEY, 			XK_c,      spawn, 	   SHCMD(TERMINAL " -e weechat")},
 	{ MODKEY,			XK_s,	   spawn,	   SHCMD("xfce4-screenshooter") },
 	{ MODKEY|ShiftMask,		XK_l,	   spawn, 	   SHCMD("i3lock") }, 
