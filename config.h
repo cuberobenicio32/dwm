@@ -16,14 +16,14 @@ static const int swallowfloating    = 0;        /* 1 means swallow floating wind
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrains Mono Nerd Font:size=15:antialias=true:autohint:true",
-					 "JoyPixels:size=14:antialias=true:autohint=true" };
+					 "JoyPixels:size=15:antialias=true:autohint=true" };
 
 static const char dmenufont[]       = "JetBrains Mono Nerd Font:size=15";
 static const char col_1[]       = "#222222";
 static const char col_2[]       = "#444444";
 static const char col_3[]       = "#bbbbbb";
-static const char col_4[]       = "#000000";
-static const char col_5[]        = "#D8572A";
+static const char col_4[]       = "#eeeeee";
+static const char col_5[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_3, col_1, col_2 },
@@ -91,7 +91,7 @@ static Key keys[] = {
 	{ MODKEY|Mod1Mask|ControlMask,  XK_h,      incrigaps,      {.i = +1 } },
 	{ MODKEY|Mod1Mask|ControlMask,  XK_l,      incrigaps,      {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_a,      togglegaps,     {0} },
-	{ MODKEY,		        XK_a,      defaultgaps,    {0} },
+	{ MODKEY,		        						XK_a,      defaultgaps,    {0} },
 	{ MODKEY,                       XK_y,      incrihgaps,     {.i = +1 } },
 	{ MODKEY,                       XK_o,      incrihgaps,     {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_y,      incrivgaps,     {.i = +1 } },
